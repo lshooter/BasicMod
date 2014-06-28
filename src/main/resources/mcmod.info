@@ -1,0 +1,21 @@
+[
+{
+  "modid": "BasicMod",
+  "name": "Basic Mod",
+  "version": "1.0",
+  "mcversion": "1.7.2",
+  "description": "My Basic Mod, based on Pahimar's Let's Mod Reboot",
+  "credits": "To pahimar",
+  "authorList": [
+    "lshooter"
+  ],
+  "url": "",
+  "updateUrl": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
