@@ -1,5 +1,6 @@
 package com.lshooter.basicmod;
 
+import com.lshooter.basicmod.configuration.ConfigurationHandler;
 import com.lshooter.basicmod.proxy.IProxy;
 import com.lshooter.basicmod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -16,13 +17,13 @@ public class BasicMod
     @Mod.Instance(Reference.MOD_ID)
     public static BasicMod instance;
 
-    @SidedProxy(clientSide = "com.lshooter.basicmod.proxy.ClientProxy", serverSide = "com.lshooter.basicmod.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
