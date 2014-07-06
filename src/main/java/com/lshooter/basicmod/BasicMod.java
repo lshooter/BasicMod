@@ -1,6 +1,7 @@
 package com.lshooter.basicmod;
 
 import com.lshooter.basicmod.handler.ConfigurationHandler;
+import com.lshooter.basicmod.init.ModItems;
 import com.lshooter.basicmod.proxy.IProxy;
 import com.lshooter.basicmod.reference.Reference;
 import com.lshooter.basicmod.utility.LogHelper;
@@ -26,6 +27,8 @@ public class BasicMod
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
