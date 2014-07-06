@@ -1,0 +1,5 @@
+<root>
+    <item name='cpw.mods.fml.common.FMLLog'>
+        <annotation name='java.lang.annotation.Deprecated'/>
+    </item>
+</root>
