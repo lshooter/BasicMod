@@ -1,5 +1,6 @@
 package com.lshooter.basicmod.item;
 
+import com.lshooter.basicmod.creativetab.CreativeTabBM;
 import com.lshooter.basicmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemBM extends Item
     public ItemBM()
     {
         super();
+        this.setCreativeTab(CreativeTabBM.BM_Tab);
     }
 
     @Override

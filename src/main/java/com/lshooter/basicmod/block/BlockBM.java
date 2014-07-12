@@ -1,5 +1,6 @@
 package com.lshooter.basicmod.block;
 
+import com.lshooter.basicmod.creativetab.CreativeTabBM;
 import com.lshooter.basicmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public class BlockBM extends Block
     public BlockBM(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabBM.BM_Tab);
     }
 
     public BlockBM()
