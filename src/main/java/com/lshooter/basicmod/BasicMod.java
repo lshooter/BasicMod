@@ -3,6 +3,7 @@ package com.lshooter.basicmod;
 import com.lshooter.basicmod.handler.ConfigurationHandler;
 import com.lshooter.basicmod.init.ModBlocks;
 import com.lshooter.basicmod.init.ModItems;
+import com.lshooter.basicmod.init.Recipes;
 import com.lshooter.basicmod.proxy.IProxy;
 import com.lshooter.basicmod.reference.Reference;
 import com.lshooter.basicmod.utility.LogHelper;
@@ -37,6 +38,7 @@ public class BasicMod
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
         LogHelper.info("Initialization Complete!");
     }
 
